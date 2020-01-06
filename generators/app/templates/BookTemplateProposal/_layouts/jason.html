@@ -1,0 +1,75 @@
+---
+layout: null
+---
+<!doctype html>
+<!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->	<html class="no-js" lang="zxx"> <!--<![endif]-->
+<head>
+{% include jason/head.html %}
+{% include jason/css.html %}
+</head>
+<body id="tg-body" class="tg-home">
+	<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<!--************************************
+			Wrapper Start
+	*************************************-->
+	<!--************************************
+			Navigation Start
+	*************************************-->
+	<div class="tg-sidenavholder">
+		<div id="tg-sidenavigation" class="tg-sidenavigation">
+			<a class="tg-btnclosenav navbar-toggle" href="javascript:void(0);" data-toggle="collapse" data-target="#tg-sidenavigation" aria-expanded="true"><i class="icon-arrow-right"></i></a>
+			<div class="tg-navscrollbar">
+				<div class="tg-logoarea">
+					<strong class="tg-logo"><a href="index.html"><img src="images/logob.png" alt="company logo here"></a></strong>
+				</div>
+				<div id="tg-navigation" class="tg-navigation">
+					<ul>
+						<li><a href="#tg-body"><span>Buy Now</span></a></li>
+						<li><a href="#tg-shortdescription"><span>Short Description</span></a></li>
+						<li><a href="#tg-topics"><span>Topics Covered</span></a></li>
+						<li><a href="#tg-faqs"><span>F.A.Qs</span></a></li>
+						<li><a href="#tg-samplepages"><span>Sample Pages</span></a></li>
+						<li><a href="#tg-author"><span>About Author</span></a></li>
+						<li><a href="#tg-otherbooks"><span>Other Books</span></a></li>
+						<li><a href="#tg-contactus"><span>Contact Us</span></a></li>
+					</ul>
+				</div>
+				<div class="tg-socialcopyrights">
+					<ul class="tg-socialicons">
+						<li class="tg-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook-f"></i></a></li>
+						<li class="tg-twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+						<li class="tg-linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+						<li class="tg-googleplus"><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
+						<li class="tg-rss"><a href="javascript:void(0);"><i class="fa fa-rss"></i></a></li>
+					</ul>
+					<p class="tg-copyrights">{{page.authorname}} © 2017 All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--************************************
+			Navigation End
+	*************************************-->
+	<div id="tg-wrapper" class="tg-wrapper tg-haslayout">
+		<!--************************************
+				Header Start
+		*************************************-->
+        {% include jason/header.html %}
+		<!--************************************
+				Header End
+        *************************************-->
+        
+        {{ content}}
+            {% include jason/footer.html %}
+	</div>
+	<!--************************************
+			Wrapper End
+	*************************************-->
+{% include jason/scripts.html %}
+</body>
+</html>

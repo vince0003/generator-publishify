@@ -1,0 +1,69 @@
+---
+layout: null
+---
+
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+{% include hbook/head.html %}
+        
+{% include hbook/css.html %}
+<style>
+    #background-7 {
+    background-image: url("/templates/hbook/assets/img/slider/{{ page.hbookfrontimg }}");
+    background-position: right 370px bottom 62px;
+}
+@media (min-width: 1200px) and (max-width: 1366px) {
+#background-7 {
+  background-image: url("/templates/hbook/assets/img/slider/{{ page.hbookfrontimg }}");
+  background-position: center center;
+  background-size: contain;
+  height: 76%;
+  transform: translateX(375px) translateY(134px);
+  width: 100%;
+}
+    
+    
+}
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    #background-7 {
+  background-image: url("/templates/hbook/assets/img/slider/{{ page.hbookfrontimg }}");
+  background-position: center center;
+  background-size: contain;
+  height: 76%;
+  transform: translateX(300px) translateY(134px);
+  width: 100%;
+}
+ 
+#background-7 {
+  background-image: url("/templates/hbook/assets/img/slider/{{ page.hbookfrontimg }}");
+  background-position: center center;
+  background-size: contain;
+  height: 47%;
+  transform: translateX(44px) translateY(320px);
+  width: 100%;
+}
+    #background-7 {
+        background-image: url("/templates/hbook/assets/img/slider/{{ page.hbookfrontimg }}");
+        background-position: center center;
+        background-size: contain;
+        height: 43%;
+        transform: translateX(15px) translateY(285px);
+        width: 100%;
+    }    
+}
+/* Large Mobile :480px. */
+</style>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+{% include hbook/header.html %}
+{{ content }}
+{% include hbook/footer.html %}		
+{% include hbook/scripts.html %}
+    </body>
+</html>

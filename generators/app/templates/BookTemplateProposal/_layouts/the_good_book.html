@@ -1,0 +1,35 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include the_good_book/head.html %}
+    <style>
+        .bg-image-1 {
+          -webkit-background-size: cover;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-image: url("/templates/the_good_book/images/{{page.frontimg}}");
+          background-position: right top;
+        }
+            </style>
+    {% include the_good_book/css.html %}
+
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="page">
+{% include the_good_book/header.html %}
+
+{{ content }}
+
+{% include the_good_book/footer.html %}
+    </div>
+{% include the_good_book/scripts.html %}
+
+</html>
