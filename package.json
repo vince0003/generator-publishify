@@ -2,18 +2,13 @@
   "name": "generator-publishify",
   "version": "1.0.0",
   "description": "Book Sample Sites For Proposal",
-  "homepage": "",
-  "author": {
-    "name": "vince0003",
-    "email": "vince0003linkmalloc@gmail.com",
-    "url": ""
-  },
+  "homepage": "https://github.com/vince0003/generator-publishify#readme",
+  "author": "vince0003 <vince0003linkmalloc@gmail.com>",
   "files": [
     "generators"
   ],
   "main": "generators/index.js",
   "keywords": [
-    "",
     "yeoman-generator"
   ],
   "devDependencies": {
@@ -75,6 +70,12 @@
     "pretest": "eslint .",
     "test": "jest"
   },
-  "repository": "vince0003/generator-publishify",
-  "license": "Apache-2.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vince0003/generator-publishify.git"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/vince0003/generator-publishify/issues"
+  }
 }
