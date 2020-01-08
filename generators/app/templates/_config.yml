@@ -42,7 +42,7 @@ destination: ../public
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-title: aladdin
-color: orange
-authorname: beans
+title: <%= title %>
+color: <%= color %>
+authorname: <%= authorname %>
 #authorname: <%= authorname %>
