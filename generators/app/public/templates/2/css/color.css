@@ -17,7 +17,7 @@ a:active,
 .tg-addnav ul li:hover a
 
 
-{ color: orange; }
+{ color: <%= color %>; }
 /*=============================================
 			Theme Background Color
 =============================================*/
@@ -38,7 +38,7 @@ a:active,
 .tg-bannercontent .tg-btnarea .tg-btn
 
 
-{ background:orange; }
+{ background:<%= color %>; }
 /*=============================================
 			Theme Border Color
 =============================================*/
@@ -51,4 +51,4 @@ input:focus,
 .tg-btn.tg-active
 
 
-{ border-color: orange; }
+{ border-color: <%= color %>; }

@@ -1,0 +1,127 @@
+---
+layout: null
+---
+
+<!doctype html>
+<!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->	<html class="no-js" lang="zxx"> <!--<![endif]-->
+<head>
+{% include 2/head.html %}
+{% include 2/css.html %}
+</head>
+<body id="tg-body" class="tg-home">
+	<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<!--************************************
+			Wrapper Start
+	*************************************-->
+	<!--************************************
+			Navigation Start
+	*************************************-->
+	<div class="tg-sidenavholder">
+		<div id="tg-sidenavigation" class="tg-sidenavigation">
+			<a class="tg-btnclosenav navbar-toggle" href="javascript:void(0);" data-toggle="collapse" data-target="#tg-sidenavigation" aria-expanded="true"><i class="icon-arrow-right"></i></a>
+			<div class="tg-navscrollbar">
+				<div class="tg-logoarea">
+					<strong class="tg-logo"><a href="index.html"><img src="/templates/2/images/logob.png" alt="company logo here"></a></strong>
+				</div>
+				<div id="tg-navigation" class="tg-navigation">
+					<ul>
+						<li><a href="#tg-body"><span>Buy Now</span></a></li>
+						<li><a href="#tg-shortdescription"><span>Short Description</span></a></li>
+						<li><a href="#tg-topics"><span>Topics Covered</span></a></li>
+						<li><a href="#tg-faqs"><span>F.A.Qs</span></a></li>
+						<li><a href="#tg-samplepages"><span>Sample Pages</span></a></li>
+						<li><a href="#tg-author"><span>About Author</span></a></li>
+						<li><a href="#tg-otherbooks"><span>Other Books</span></a></li>
+						<li><a href="#tg-contactus"><span>Contact Us</span></a></li>
+					</ul>
+				</div>
+				<div class="tg-socialcopyrights">
+					<ul class="tg-socialicons">
+						<li class="tg-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook-f"></i></a></li>
+						<li class="tg-twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+						<li class="tg-linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+						<li class="tg-googleplus"><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
+						<li class="tg-rss"><a href="javascript:void(0);"><i class="fa fa-rss"></i></a></li>
+					</ul>
+					<p class="tg-copyrights">{{ site.authorname }} © 2017 All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--************************************
+			Navigation End
+	*************************************-->
+	<div id="tg-wrapper" class="tg-wrapper tg-haslayout">
+		<!--************************************
+				Header Start
+		*************************************-->
+        {% include 2/header.html %}
+		<!--************************************
+				Header End
+		*************************************-->
+		<!--************************************
+				Home Slider Start
+		*************************************-->
+		<div class="tg-homeslider tg-haslayout">
+			<div class="tg-bannerimg" data-vide-bg="poster: /templates/2/images/slider/img-01.jpg" data-vide-options="position: 0% 50%">
+				<div class="tg-bannercontentholder">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-5 col-sm-6 col-md-6 col-lg-6">
+								<div class="tg-postbook">
+									<figure class="tg-featureimg">
+										<div class="tg-bookimg">
+											<div class="tg-frontcover"><img src="/templates/2/images/slider/fronimg.jpg" alt="image description"></div>
+											<div class="tg-backcover"><img src="/templates/2/images/slider/backimg.jpg" alt="image description"></div>
+										</div>
+									</figure>
+								</div>
+							</div>
+							<div class="col-xs-7 col-sm-6 col-md-6 col-lg-6">
+								<div class="tg-bannercontent">
+									<span class="tg-bookby">By: {{ site.authorname }}</span>
+									<h1>{{ site.title }}</h1>
+									<div class="tg-description">
+										<p>Consectetur adipisicing elit eiusmod tempoiunt ut labore et dolore magna aliqua enim adeinim niam amaquis nostrud exercitation.</p>
+									</div>
+									<div class="tg-btnarea">
+										<a class="tg-btn tg-active" href="javascript:void(0);">Buy Now For $9.30</a>
+										<a class="tg-readsample" href="javascript:void(0);">Read A Free Sample</a>
+									</div>
+									<em class="tg-inlucdebooks">* eBook includes iBooks, PDF &amp; ePub versions</em>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--************************************
+				Home Slider End
+		*************************************-->
+		<!--************************************
+				Main Start
+		*************************************-->
+		{{ content }}
+		<!--************************************
+				Main End
+		*************************************-->
+		<!--************************************
+				Footer Start
+		*************************************-->
+            {% include 2/footer.html %}
+		<!--************************************
+				Footer End
+		*************************************-->
+	</div>
+	<!--************************************
+			Wrapper End
+	*************************************-->
+    {% include 2/scripts.html %}
+</body>
+</html>

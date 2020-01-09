@@ -1,0 +1,640 @@
+<script>
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+  </script>
+  <script>
+    (function () {
+      function addEventListener(element, event, handler) {
+        if (element.addEventListener) {
+          element.addEventListener(event, handler, false);
+        } else if (element.attachEvent) {
+          element.attachEvent('on' + event, handler);
+        }
+      }
+
+      function maybePrefixUrlField() {
+        if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+          this.value = "http://" + this.value;
+        }
+      }
+
+      var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+      if (urlFields && urlFields.length > 0) {
+        for (var j = 0; j < urlFields.length; j++) {
+          addEventListener(urlFields[j], 'blur', maybePrefixUrlField);
+        }
+      }
+      /* test if browser supports date fields */
+      var testInput = document.createElement('input');
+      testInput.setAttribute('type', 'date');
+      if (testInput.type !== 'date') {
+
+        /* add placeholder & pattern to all date fields */
+        var dateFields = document.querySelectorAll('.mc4wp-form input[type="date"]');
+        for (var i = 0; i < dateFields.length; i++) {
+          if (!dateFields[i].placeholder) {
+            dateFields[i].placeholder = 'YYYY-MM-DD';
+          }
+          if (!dateFields[i].pattern) {
+            dateFields[i].pattern = '[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])';
+          }
+        }
+      }
+    })();
+
+  </script>
+  <link rel='stylesheet' property='stylesheet' id='rs-icon-set-fa-icon-css'
+    href='/templates/6/wp-content/plugins/revslider/public/assets/fonts/font-awesome/css/font-awesome.css'
+    type='text/css' media='all' />
+  <script type="text/javascript">
+    var c = document.body.className;
+    c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+    document.body.className = c;
+
+  </script>
+  <script type="text/javascript">
+    function revslider_showDoubleJqueryError(sliderID) {
+      var errorMessage =
+        "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
+      errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
+      errorMessage +=
+        "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
+      errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
+      errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
+      jQuery(sliderID).show().html(errorMessage);
+    }
+
+  </script>
+  <script type="text/javascript">
+    function revslider_showDoubleJqueryError(sliderID) {
+      var errorMessage =
+        "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
+      errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
+      errorMessage +=
+        "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
+      errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
+      errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
+      jQuery(sliderID).show().html(errorMessage);
+    }
+
+  </script>
+  <script type='text/javascript'
+    src='/templates/6/wp-content/plugins/booker-core-plugin/js/turnjs4/lib/turn.min.js?ver=5.3.2'></script>
+  <script type='text/javascript' src='/templates/6/wp-content/plugins/booker-shortcodes-plugin/js/scripts.js?ver=5.3.2'>
+  </script>
+  <script type='text/javascript'
+    src='/templates/6/wp-content/plugins/booker-shortcodes-plugin/js/jquery.flexslider-min.js?ver=5.3.2'></script>
+  <script type='text/javascript' src='/templates/6/wp-content/plugins/booker-widgets-plugin/js/scripts.js?ver=5.3.2'>
+  </script>
+  <script type='text/javascript'
+    src='/templates/6/wp-content/plugins/booker-widgets-plugin/js/jquery.animateNumbers.js?ver=5.3.2'></script>
+  <script type='text/javascript' src='/templates/6/wp-content/plugins/booker-widgets-plugin/js/fittext.js?ver=5.3.2'>
+  </script>
+  <script type='text/javascript'
+    src='/templates/6/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4'></script>
+  <script type='text/javascript'>
+    /* <![CDATA[ */
+    var woocommerce_params = {
+      "ajax_url": "\/booker\/wp-admin\/admin-ajax.php",
+      "wc_ajax_url": "\/booker\/?wc-ajax=%%endpoint%%"
+    };
+    /* ]]> */
+
+  </script>
+  <script type='text/javascript'
+    src='/templates/6/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=3.8.1'></script>
+  <script type='text/javascript'>
+    /* <![CDATA[ */
+    var wc_cart_fragments_params = {
+      "ajax_url": "\/booker\/wp-admin\/admin-ajax.php",
+      "wc_ajax_url": "\/booker\/?wc-ajax=%%endpoint%%",
+      "cart_hash_key": "wc_cart_hash_5cdd9bf3531715fca6c3da574721f38e",
+      "fragment_name": "wc_fragments_5cdd9bf3531715fca6c3da574721f38e",
+      "request_timeout": "5000"
+    };
+    /* ]]> */
+
+  </script>
+  <script type='text/javascript'
+    src='/templates/6/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=3.8.1'></script>
+  <script type='text/javascript'>
+    /* <![CDATA[ */
+    var wpcf7 = {
+      "apiSettings": {
+        "root": "https:\/\/themecanon.com\/booker\/wp-json\/contact-form-7\/v1",
+        "namespace": "contact-form-7\/v1"
+      }
+    };
+    /* ]]> */
+
+  </script>
+  <script type='text/javascript' src='/templates/6/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.6'>
+  </script>
+  <script type='text/javascript' src='/templates/6/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+  <script type='text/javascript' src='/templates/6/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
+  <script type='text/javascript' src='/templates/6/wp-includes/js/jquery/ui/menu.min.js?ver=1.11.4'></script>
+  <script type='text/javascript' src='/templates/6/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4'></script>
+  <script type='text/javascript'>
+    ('fetch' in window) || document.write(
+      '<script src="/templates/6/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>');
+    (document.contains) || document.write(
+      '<script src="/templates/6/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.26.0-0"></scr' +
+      'ipt>');
+    (window.FormData && window.FormData.prototype.keys) || document.write(
+      '<script src="/templates/6/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>');
+    (Element.prototype.matches && Element.prototype.closest) || document.write(
+      '<script src="/templates/6/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' +
+      'ipt>');
+
+  </script>
+  <script type='text/javascript' src='/templates/6/wp-includes/js/dist/dom-ready.min.js?ver=2.5.1'></script>
+  <script type='text/javascript' src='/templates/6/wp-includes/js/dist/a11y.min.js?ver=2.5.1'></script>
+  <script type='text/javascript'>
+    /* <![CDATA[ */
+    var uiAutocompleteL10n = {
+      "noResults": "No results found.",
+      "oneResult": "1 result found. Use up and down arrow keys to navigate.",
+      "manyResults": "%d results found. Use up and down arrow keys to navigate.",
+      "itemSelected": "Item selected."
+    };
+    /* ]]> */
+
+  </script>
+  <script type='text/javascript' src='/templates/6/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.11.4'></script>
+  <script type='text/javascript' src='/templates/6/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+  <script type='text/javascript' src='/templates/6/wp-includes/js/jquery/ui/slider.min.js?ver=1.11.4'></script>
+  <script type='text/javascript'
+    src='/templates/6/wp-content/themes/booker/js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js?ver=5.3.2'></script>
+  <script type='text/javascript'
+    src='/templates/6/wp-content/themes/booker/js/fancybox/source/jquery.fancybox.pack.js?ver=5.3.2'></script>
+  <script type='text/javascript'
+    src='/templates/6/wp-content/themes/booker/js/fancybox/source/helpers/jquery.fancybox-buttons.js?ver=5.3.2'>
+  </script>
+  <script type='text/javascript'
+    src='/templates/6/wp-content/themes/booker/js/fancybox/source/helpers/jquery.fancybox-media.js?ver=5.3.2'></script>
+  <script type='text/javascript'
+    src='/templates/6/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js?ver=4.12'>
+  </script>
+  <script type='text/javascript'
+    src='/templates/6/wp-content/plugins/js_composer/assets/lib/bower/flexslider/jquery.flexslider-min.js?ver=4.12'>
+  </script>
+  <script type='text/javascript' src='/templates/6/wp-content/themes/booker/js/jquery.fitvids.js?ver=5.3.2'></script>
+  <script type='text/javascript' src='/templates/6/wp-content/themes/booker/js/placeholder.js?ver=5.3.2'></script>
+  <script type='text/javascript' src='/templates/6/wp-content/themes/booker/js/jquery.matchHeight-min.js?ver=5.3.2'>
+  </script>
+  <script type='text/javascript' src='/templates/6/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+  <script type='text/javascript' src='/templates/6/wp-content/themes/booker/js/jquery.sidr.js?ver=5.3.2'></script>
+  <script type='text/javascript' src='/templates/6/wp-content/themes/booker/js/cleantabs.jquery.js?ver=5.3.2'></script>
+  <script type='text/javascript' src='/templates/6/wp-content/themes/booker/js/jquery.stellar.min.js?ver=5.3.2'>
+  </script>
+  <script type='text/javascript' src='/templates/6/wp-content/themes/booker/js/jquery.scrollUp.min.js?ver=5.3.2'>
+  </script>
+  <script type='text/javascript' src='/templates/6/wp-content/themes/booker/js/selectivizr-min.js?ver=5.3.2'></script>
+  <script type='text/javascript' src='/templates/6/wp-content/themes/booker/js/jquery.countdown.min.js?ver=5.3.2'>
+  </script>
+  <script type='text/javascript'
+    src='/templates/6/wp-content/themes/booker/js/owl-carousel/owl.carousel.min.js?ver=5.3.2'></script>
+  <script type='text/javascript' src='//platform.instagram.com/en_US/embeds.js?ver=5.3.2'></script>
+  <script type='text/javascript'
+    src='/templates/6/wp-content/themes/booker/js/jquery.mCustomScrollbar.concat.min.js?ver=5.3.2'></script>
+  <script type='text/javascript' src='/templates/6/wp-content/themes/booker/js/canon-global-functions.js?ver=5.3.2'>
+  </script>
+  <script type='text/javascript' src='/templates/6/wp-content/themes/booker/js/mb-custom-scripts.js?ver=5.3.2'></script>
+  <script type='text/javascript'>
+    /* <![CDATA[ */
+    var extData = {
+      "ajaxUrl": "https:\/\/themecanon.com\/booker\/wp-admin\/admin-ajax.php",
+      "pageType": "page",
+      "templateURI": "https:\/\/themecanon.com\/booker\/wp-content\/themes\/booker",
+      "canonOptions": {
+        "dev_mode": "checked",
+        "dev_mockup_structure": "",
+        "dev_controller_classes": "",
+        "use_responsive_design": "checked",
+        "use_boxed_design": "unchecked",
+        "use_maintenance_mode": "unchecked",
+        "maintenance_msg": "We are busy doing maintenance - please check back later!",
+        "read_more_text": "Continue Reading",
+        "sidebars_alignment": "right",
+        "back_to_top_button": "floating",
+        "overlay_header": "checked",
+        "overlay_content_negative_margin": "-80",
+        "overlay_header_turn_off_width": "768",
+        "overlay_content_turn_off_width": "768",
+        "image_sizes": {
+          "canon_post_component_carousel": {
+            "width": "700",
+            "height": "420",
+            "ratio": "1.67"
+          },
+          "canon_block_post_grid_6wide": {
+            "width": "1005",
+            "height": "519",
+            "ratio": "1.94"
+          },
+          "canon_block_post_grid_3wide": {
+            "width": "1267",
+            "height": "654",
+            "ratio": "1.94"
+          },
+          "canon_block_post_grid_6tall": {
+            "width": "1267",
+            "height": "654",
+            "ratio": "1.94"
+          },
+          "canon_block_carousel": {
+            "width": "970",
+            "height": "546",
+            "ratio": "1.78"
+          },
+          "canon_even_grid": {
+            "width": "970",
+            "height": "546",
+            "ratio": "1.78"
+          },
+          "canon_grid_gallery_landscape": {
+            "width": "600",
+            "height": "361",
+            "ratio": "1.66"
+          },
+          "canon_grid_gallery_portrait": {
+            "width": "500",
+            "height": "602",
+            "ratio": "0.83"
+          }
+        },
+        "autocomplete_words": "c++, jquery, I like jQuery, java, php, coldfusion, javascript, asp, ruby",
+        "hide_theme_meta_description": "unchecked",
+        "hide_theme_og": "unchecked",
+        "fontface_fix": "checked",
+        "favicon_url": ""
+      },
+      "canonOptionsFrame": {
+        "header_pre_layout": "off",
+        "header_main_layout": "header_main_custom_left_right",
+        "header_main_custom_left": "logo",
+        "header_main_custom_right": "primary",
+        "header_post_layout": "off",
+        "blog_feature_layout": "block_slider",
+        "footer_pre_layout": "off",
+        "footer_main_layout": "block_widgets",
+        "footer_post_layout": "footer_post_custom_left_right",
+        "footer_post_custom_left": "footer_text",
+        "footer_post_custom_right": "social",
+        "use_boxed_header": "checked",
+        "use_sticky_preheader": "unchecked",
+        "use_sticky_header": "unchecked",
+        "use_sticky_postheader": "unchecked",
+        "preheader_opacity": "1",
+        "header_opacity": "0",
+        "postheader_opacity": "1",
+        "use_sticky_shadow": "checked",
+        "sticky_turn_off_width": "768",
+        "add_search_btn_to_primary": "checked",
+        "add_search_btn_to_secondary": "unchecked",
+        "header_padding_top": "25",
+        "header_padding_bottom": "20",
+        "pos_left_element_top": "0",
+        "pos_left_element_left": "0",
+        "pos_right_element_top": "15",
+        "pos_right_element_right": "0",
+        "prefooter_padding_top": "20",
+        "prefooter_padding_bottom": "20",
+        "prefooter_pos_left_element_top": "0",
+        "prefooter_pos_left_element_left": "0",
+        "prefooter_pos_right_element_top": "10",
+        "prefooter_pos_right_element_right": "0",
+        "logo_url": "",
+        "logo_max_width": "159",
+        "logo_text": "",
+        "logo_text_append_tagline": "checked",
+        "logo_text_size": "42",
+        "tagline_text_size": "12",
+        "aux_logo_url": "",
+        "aux_logo_max_width": "97",
+        "header_img_homepage_only": "unchecked",
+        "header_img_url": "",
+        "header_img_bg_color": "#141312",
+        "header_img_height": "400",
+        "header_img_parallax_amount": "50",
+        "header_img_text": "<h3>Header Image With Parallax Scrolling - What's Not To Like!<\/h3>[button]Buy Booker Today[\/button]",
+        "header_img_text_alignment": "centered",
+        "header_img_text_margin_top": "150",
+        "banner_code": "<a href='http:\/\/www.themeforest.com\/?ref=themecanon' target='_blank'><img src='http:\/\/themecanon.com\/booker\/wp-content\/themes\/booker\/img\/banner_468x60.gif'><\/a>",
+        "header_text": "WordPress for Online Authors",
+        "footer_text": "\u00a9 Copyright Booker by <a href=\"http:\/\/www.themecanon.com\" target=\"_blank\">Theme Canon<\/a>",
+        "toolbar_search_button": "checked",
+        "countdown_datetime_string": "December 31, 2023 23:59:59",
+        "countdown_gmt_offset": "+10",
+        "countdown_description": "Next Event: ",
+        "social_in_new": "checked",
+        "social_links": [
+          ["fa-facebook-square", "https:\/\/www.facebook.com\/themecanon"],
+          ["fa-twitter-square", "https:\/\/twitter.com\/ThemeCanon"],
+          ["fa-rss-square", "http:\/\/localhost:8888\/20160403-Booker\/feed\/"]
+        ],
+        "block_post_grid_shows": "latest_posts",
+        "block_post_grid_layout": "6wide",
+        "block_post_grid_animation": "off",
+        "block_post_grid_anim_delay": "400",
+        "block_post_grid_anim_speed": "3000",
+        "block_slider_alias": "Post-Slider",
+        "block_slider_boxed": "unchecked",
+        "block_carousel_shows": "latest_posts",
+        "block_carousel_show_featured_image": "checked",
+        "block_carousel_show_title": "checked",
+        "block_carousel_show_excerpt": "checked",
+        "block_carousel_display_num_posts": "5",
+        "block_carousel_num_posts": "15",
+        "block_carousel_excerpt_length": "130",
+        "block_carousel_autoplay_speed": "3000",
+        "block_carousel_stop_on_hover": "checked",
+        "block_carousel_pagination": "checked",
+        "block_instagram_carousel_shows": "recent",
+        "block_instagram_carousel_user_id": null,
+        "block_instagram_carousel_tag": "wordpress",
+        "block_instagram_carousel_display_num_posts": "5",
+        "block_instagram_carousel_num_posts": "15",
+        "block_instagram_carousel_excerpt_length": "100",
+        "block_instagram_carousel_autoplay_speed": "3000",
+        "block_instagram_carousel_stop_on_hover": "checked",
+        "block_instagram_carousel_pagination": "checked",
+        "block_widgets_boxed": "checked",
+        "block_search_bg_color": "#141312",
+        "block_search_text_color": "#ffffff",
+        "block_search_bg_attachment": "scroll",
+        "block_search_bg_size": "cover",
+        "block_search_block_height": "750",
+        "block_search_content_top_margin": "200",
+        "block_search_html": "<h1>Search <b>Specific Categories<\/b><\/h1>\r\n<p>Search my blog of literary masterpieces.<\/p>",
+        "block_search_placeholder": "Search For Posts",
+        "block_search_btn_text": "Search",
+        "block_search_in": "all_categories",
+        "header_pre_custom_center": "off",
+        "header_pre_custom_left": "off",
+        "header_pre_custom_right": "off",
+        "header_main_custom_center": "off",
+        "header_post_custom_center": "off",
+        "header_post_custom_left": "off",
+        "header_post_custom_right": "off",
+        "footer_pre_custom_center": "off",
+        "footer_pre_custom_left": "off",
+        "footer_pre_custom_right": "off",
+        "footer_post_custom_center": "off",
+        "block_search_bg_img_url": ""
+      },
+      "canonOptionsPost": {
+        "blog_layout": "masonry_sidebar",
+        "blog_num_columns": "2",
+        "blog_sidebar": "canon_archive_sidebar_widget_area",
+        "blog_drop_cap": "unchecked",
+        "blog_excerpt_length": "160",
+        "blog_pagination": "prevnext",
+        "cat_layout": "masonry",
+        "cat_num_columns": "3",
+        "cat_sidebar": "canon_archive_sidebar_widget_area",
+        "cat_drop_cap": "unchecked",
+        "cat_excerpt_length": "160",
+        "show_cat_title": "checked",
+        "show_cat_description": "checked",
+        "cat_pagination": "prevnext",
+        "archive_layout": "classic_sidebar",
+        "archive_num_columns": "3",
+        "archive_sidebar": "canon_archive_sidebar_widget_area",
+        "archive_drop_cap": "unchecked",
+        "archive_excerpt_length": "220",
+        "archive_pagination": "prevnext",
+        "page_show_comments": "unchecked",
+        "single_default_post_style": "compact_sidebar",
+        "single_show_meta": "unchecked",
+        "single_show_avatar": "checked",
+        "single_use_dropcap": "unchecked",
+        "show_tags": "checked",
+        "show_comments": "checked",
+        "show_post_nav": "checked",
+        "post_nav_same_cat": "unchecked",
+        "post_component_ad_code": "<a href='http:\/\/www.themeforest.com\/?ref=themecanon' target='_blank'><img src='http:\/\/themecanon.com\/booker\/wp-content\/themes\/booker\/img\/ad-example.png' alt='Advertisement'><\/a>",
+        "show_meta_categories": "checked",
+        "show_meta_author": "checked",
+        "show_meta_date": "checked",
+        "show_meta_comments": "checked",
+        "show_meta_likes": "checked",
+        "show_meta_views": "checked",
+        "show_share_link_facebook": "checked",
+        "show_share_link_twitter": "checked",
+        "show_share_link_google_plus": "checked",
+        "show_share_link_pinterest": "checked",
+        "archive_header_padding_top": "150",
+        "archive_header_padding_bottom": "100",
+        "archive_header_image_default": "http:\/\/themecanon.com\/booker\/wp-content\/uploads\/2016\/05\/blog-7.jpg",
+        "search_box_text": "What are you looking for?",
+        "search_posts": "checked",
+        "search_pages": "checked",
+        "search_cpt": "checked",
+        "search_cpt_source": "",
+        "search_widget_area_1": "canon_cwa_search-widget-area-1",
+        "search_widget_area_2": "canon_cwa_search-widget-area-2",
+        "search_widget_area_3": "canon_cwa_search-widget-area-3",
+        "search_widget_area_4": "off",
+        "search_widget_area_5": "off",
+        "404_layout": "full",
+        "404_sidebar": "canon_page_sidebar_widget_area",
+        "404_title": "Page not found",
+        "404_msg": "Sorry, you're lost my friend, the page you're looking for does not exist anymore. Take your luck at searching for a new one.",
+        "archive_ads": [{
+          "append_to_posts": "10",
+          "ad_code": "[poll id=\"999\"]",
+          "show_ad_blog": "checked",
+          "show_ad_category": "unchecked",
+          "show_ad_archive": "unchecked"
+        }, {
+          "append_to_posts": "6,8",
+          "ad_code": "<a href=\"#\" class=\"col-1-1\">\r\n<img src=\"http:\/\/themecanon.com\/booker\/wp-content\/themes\/booker\/img\/ad-example-2.png\" alt=\"Advertisement\" \/>\r\n<\/a>\r\n\u00a0",
+          "show_ad_blog": "checked",
+          "show_ad_category": "unchecked",
+          "show_ad_archive": "unchecked"
+        }],
+        "revslider_clean_ui": "checked",
+        "vcomposer_clean_ui": "checked",
+        "ultimate_addons_clean_ui": "checked",
+        "use_woocommerce_sidebar": "checked",
+        "woocommerce_sidebar": "canon_cwa_shop",
+        "woocommerce_shop_slider": "Shop-Slider",
+        "archive_header_cat_media": "",
+        "archive_header_cat_news": "",
+        "archive_header_cat_uncategorized": ""
+      },
+      "canonOptionsAppearance": {
+        "body_skin_class": "tc-booker-1",
+        "color_body": "#ffffff",
+        "color_main_text": "#000000",
+        "color_main_headings": "#000000",
+        "color_links": "#000000",
+        "color_links_hover": "{{ site.color }}",
+        "color_like": "#f15292",
+        "color_white_text": "#ffffff",
+        "color_btn": "#000000",
+        "color_btn_hover": "{{ site.color }}",
+        "color_btn_text": "#ffffff",
+        "color_btn_text_hover": "#ffffff",
+        "color_feat_color": "{{ site.color }}",
+        "color_feat_overlay_color": "#c3ced4",
+        "color_feat_overtext_color": "#ffffff",
+        "color_meta": "#8da1ab",
+        "color_drops": "#000000",
+        "color_pre_header": "#ffffff",
+        "color_pre_header_text": "#000000",
+        "color_pre_header_text_hover": "{{ site.color }}",
+        "color_pre_header_menus": "#f8f8f8",
+        "color_pre_header_line": "#e8e8e8",
+        "color_header": "#ffffff",
+        "color_header_stuck": "#ffffff",
+        "color_header_text": "#000000",
+        "color_header_text_hover": "{{ site.color }}",
+        "color_header_menus_2nd": "#ffffff",
+        "color_header_menus": "#f8f8f8",
+        "color_header_line": "#e7e7e7",
+        "color_post_header": "#ffffff",
+        "color_post_header_text": "#000000",
+        "color_post_header_text_hover": "{{ site.color }}",
+        "color_post_header_menus": "#f8f8f8",
+        "color_post_header_line": "#e7e7e7",
+        "color_search_bg": "#1d2121",
+        "color_search_text": "#ffffff",
+        "color_search_text_hover": "{{ site.color }}",
+        "color_search_line": "#3c4242",
+        "color_sidr": "#191c20",
+        "color_sidr_text": "#ffffff",
+        "color_sidr_text_hover": "{{ site.color }}",
+        "color_sidr_line": "#23272c",
+        "color_borders": "#e8e8e8",
+        "color_second_plate": "#f8f8f8",
+        "color_fields": "#f8f8f8",
+        "color_feat_area": "#f8f8f8",
+        "color_feat_area_text": "#000000",
+        "color_feat_area_text_hover": "{{ site.color }}",
+        "color_feat_car_text": "#ffffff",
+        "color_feat_car_text_hover": "#7db2b4",
+        "color_feat_area_borders": "{{ site.color }}",
+        "color_footfeat_area": "#1e2123",
+        "color_footfeat_area_text": "#ffffff",
+        "color_footfeat_area_text_hover": "{{ site.color }}",
+        "color_footfeat_area_borders": "#54585a",
+        "color_pre_footer": "#ffffff",
+        "color_pre_footer_text": "#000000",
+        "color_pre_footer_text_hover": "{{ site.color }}",
+        "color_pre_footer_line": "#e7e7e7",
+        "color_baseline": "#1e2123",
+        "color_baseline_text": "#b8babd",
+        "color_baseline_text_hover": "{{ site.color }}",
+        "color_logo": "#000000",
+        "bg_img_url": "",
+        "bg_link": "",
+        "bg_size": "auto",
+        "bg_repeat": "repeat",
+        "bg_attachment": "scroll",
+        "lightbox_overlay_color": "#000000",
+        "lightbox_overlay_opacity": "0.7",
+        "font_main": ["canon_default", "regular", "latin"],
+        "font_heading": ["canon_default", "regular", "latin"],
+        "font_heading2": ["canon_default", "regular", "latin"],
+        "font_heading_italic": ["canon_default", "regular", "latin"],
+        "font_heading_strong": ["canon_default", "regular", "latin"],
+        "font_heading2_italic": ["canon_default", "regular", "latin"],
+        "font_heading2_strong": ["canon_default", "regular", "latin"],
+        "font_nav": ["canon_default", "regular", "latin"],
+        "font_meta": ["canon_default", "regular", "latin"],
+        "font_tags": ["canon_default", "regular", "latin"],
+        "font_button": ["canon_default", "regular", "latin"],
+        "font_dropcap": ["canon_default", "regular", "latin"],
+        "font_quote": ["canon_default", "regular", "latin"],
+        "font_logotext": ["canon_default", "regular", "latin"],
+        "font_lead": ["canon_default", "regular", "latin"],
+        "font_bold": ["canon_default", "regular", "latin"],
+        "font_italic": ["canon_default", "regular", "latin"],
+        "font_forms": ["canon_default", "regular", "latin"],
+        "font_size_root": "100",
+        "anim_img_slider_slideshow": "unchecked",
+        "anim_img_slider_delay": "5000",
+        "anim_img_slider_anim_duration": "800",
+        "anim_quote_slider_slideshow": "checked",
+        "anim_quote_slider_delay": "5000",
+        "anim_quote_slider_anim_duration": "800",
+        "anim_menus": "anim_menus_off",
+        "anim_menus_enter": "left",
+        "anim_menus_move": "40",
+        "anim_menus_duration": "600",
+        "anim_menus_delay": "150"
+      },
+      "canonOptionsAdvanced": {
+        "reset_all": "",
+        "reset_basic": "",
+        "custom_widget_areas": {
+          "9999": {
+            "name": ""
+          },
+          "0": {
+            "name": "Search Widget Area 1"
+          },
+          "1": {
+            "name": "Search Widget Area 2"
+          },
+          "2": {
+            "name": "Search Widget Area 3"
+          },
+          "3": {
+            "name": "Search Widget Area 4"
+          },
+          "4": {
+            "name": "Search Widget Area 5"
+          },
+          "5": {
+            "name": "shop"
+          }
+        },
+        "use_final_call_css": "checked",
+        "oauth_instagram_client_id": "",
+        "oauth_instagram_client_secret": "",
+        "oauth_instagram": "null",
+        "reset_oauth_instagram": "",
+        "final_call_css": "div.single-item.ad,\r\n.single-item.post.tag-fullwidth{\r\n    width: 100%;\r\n}\r\n\r\n.archive.category .single-item.post.tag-fullwidth{\r\n    width: 30%;\r\n}\r\n\r\n.is-col-1-2.not-sidebar .single-item.post.sticky,\r\n.is-col-1-2.not-sidebar .single-item.post.tag-fullwidth { \r\n    width: 48%;\r\n}\r\n.is-col-1-3 .single-item.post.sticky,\r\n.is-col-1-3 .single-item.post.tag-fullwidth { \r\n    width: 30%;\r\n}\r\n.is-col-1-4 .single-item.post.sticky,\r\n.is-col-1-4 .single-item.post.tag-fullwidth { \r\n    width: 22%;\r\n}\r\n.is-col-1-2.not-sidebar .single-item.ad,\r\n.is-col-1-3 .single-item.ad,\r\n.is-col-1-4 .single-item.ad  {\r\n    display: none;\r\n}\r\n\r\n",
+        "canon_options_data": "",
+        "import_data": "",
+        "canon_widgets_data": "",
+        "import_widgets_data": "",
+        "oauth_instagram_redirect_uri": "http:\/\/themecanon.com\/booker\/wp-admin\/admin.php?page=handle_canon_options_advanced"
+      }
+    };
+    var extDataAutocomplete = {
+      "autocompleteArray": ["c++", "jquery", "I like jQuery", "java", "php", "coldfusion", "javascript", "asp",
+        "ruby"]
+    };
+    /* ]]> */
+
+  </script>
+  <script type='text/javascript' src='/templates/6/wp-content/themes/booker/js/scripts.js?ver=5.3.2'></script>
+  <script type='text/javascript' src='/templates/6/wp-includes/js/comment-reply.min.js?ver=5.3.2'></script>
+  <script type='text/javascript' src='/templates/6/wp-includes/js/wp-embed.min.js?ver=5.3.2'></script>
+  <script type='text/javascript'
+    src='/templates/6/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=4.12'></script>
+  <script type='text/javascript'
+    src='/templates/6/wp-content/plugins/Ultimate_VC_Addons/modules/../assets/min-js/vhparallax.min.js?ver=5.3.2'>
+  </script>
+  <script type='text/javascript'>
+    /* <![CDATA[ */
+    var mc4wp_forms_config = [];
+    /* ]]> */
+
+  </script>
+  <script type='text/javascript'
+    src='/templates/6/wp-content/plugins/mailchimp-for-wp/assets/js/forms-api.min.js?ver=4.7.4'></script>
+  <!--[if lte IE 9]>
+<script type='text/javascript' src='/templates/6/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.7.4'></script>
+<![endif]-->

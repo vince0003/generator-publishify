@@ -264,7 +264,7 @@
         color: #333;
     }
     .stick .menu-bar ul li a:hover {
-        color: orange;
+        color: <%= color %>;
     }
     .header-left.f-left {
         float: none;
